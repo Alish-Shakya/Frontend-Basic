@@ -1,0 +1,31 @@
+Frontend:
+          html: make structure,
+          css: used to beautify,
+          javascript: used to deals with data,
+
+
+Components:
+          components are function whose first letter is always capital and it is called just like calling tag
+
+          Components must return only one wrapper
+
+          Use {} curly braces to perform javascript operation
+          operation inside tag after return
+          (+,-,*,/,variable, call, map, filter)
+
+          Components are custom tag
+          any thing that is written inside return of components are displayed on the  browser.
+
+
+difference between components and function
+difference lies while calling
+
+function = App()
+components = <App />
+
+
+
+
+
+package :-
+          react-router

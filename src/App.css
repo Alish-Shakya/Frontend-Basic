@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.external {
+  background-color: palegreen;
+}
