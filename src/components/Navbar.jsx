@@ -1,15 +1,29 @@
-import React from "react";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router"; // Use 'react-router-dom' for browser routing
+
 const Navbar = () => {
   return (
-    <>
-      <div style={{ background: "grey", padding: "20px" }}>
-        <NavLink to={"/"} style={{ marginRight: "10px" }}>
-          Home
-        </NavLink>
-        <NavLink to={"/about"}> About </NavLink>
-      </div>
-    </>
+    <div className="bg-gray-800 p-4 flex space-x-6 text-2xl">
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive
+            ? "text-white font-bold border-b-2 border-white"
+            : "text-gray-300 hover:text-white"
+        }
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          isActive
+            ? "text-white font-bold border-b-2 border-white"
+            : "text-gray-300 hover:text-white"
+        }
+      >
+        About
+      </NavLink>
+    </div>
   );
 };
 
