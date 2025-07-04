@@ -3,3 +3,7 @@
 .external {
   background-color: palegreen;
 }
+
+* {
+  background-color: aqua;
+}
