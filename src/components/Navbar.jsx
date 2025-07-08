@@ -13,6 +13,7 @@ const Navbar = () => {
       >
         Home
       </NavLink>
+
       <NavLink
         to="/about"
         className={({ isActive }) =>
@@ -23,6 +24,8 @@ const Navbar = () => {
       >
         About
       </NavLink>
+
+      <NavLink to="/contact"> Contact </NavLink>
     </div>
   );
 };

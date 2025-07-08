@@ -29,3 +29,36 @@ components = <App />
 
 package :-
           react-router
+
+
+
+
+
+
+
+Routing
+          Navlink: Change the url                 (URL : base, route, query)
+          Route: Gives components based on url
+
+          URL: http://localhost:3000/blog1/blog2?name=n9&age=5
+
+          baseUrl: http://localhost:3000/
+          route: blog1/blog2
+          query paramater:name, age
+
+anything before ? is called route
+
+and after question mark is query string or search string
+
+here block1 and block2 is route paramater and name, age are cakled query paramater
+
+
+types of hooks
+
+useParams() : get dymanic route paramater
+useSearchParams(): get query paramater
+useNavigate() : change path on click event
+
+
+
+
