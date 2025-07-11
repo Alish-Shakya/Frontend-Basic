@@ -9,7 +9,8 @@ const Contact = ({ name, number }) => {
     <>
       <p>
         <p>
-          my name is {name} and my contact number is {number}.{details}
+          my name is {name} and my contact number is {number}. <br />
+          {details}
         </p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat a porro
         ea vitae sapiente at eligendi soluta dolor ipsum animi harum, eius enim

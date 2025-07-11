@@ -11,7 +11,6 @@ const About = () => {
         dignissimos quasi minus est fugit, explicabo iusto ad ipsa, eius ab
         debitis.
       </p>
-      ;
     </>
   );
 };

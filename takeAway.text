@@ -29,6 +29,8 @@ components = <App />
 
 package :-
           react-router
+          npm create vite@latest projectname
+          npm install tailwind @tailwindcss/vite
 
 
 
@@ -62,3 +64,4 @@ useNavigate() : change path on click event
 
 
 
+outlet: replace children route
