@@ -1,4 +1,5 @@
 import React from "react";
+import Form from "./Form";
 //rafce
 const Home = () => {
   let firstName = "Ram";
@@ -14,6 +15,8 @@ const Home = () => {
 
   return (
     <>
+      <Form />
+      <br />
       <div>this is my Home component </div>
       <p>this is jhon banega don </p>
       {fullName}
