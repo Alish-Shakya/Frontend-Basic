@@ -1,7 +1,11 @@
 import React from "react";
 import LocalStorage from "./localStorage";
+import SessionStorage from "./SessionStorage";
+import { useNavigate } from "react-router";
 
 const Form = () => {
+  let nagigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("button clicked");
@@ -27,7 +31,8 @@ const Form = () => {
           User Form
         </h2>
 
-        <LocalStorage />
+        {/* <LocalStorage /> */}
+        <SessionStorage />
 
         {/* ✅ All form fields inside one parent div */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -141,11 +146,20 @@ const Form = () => {
         <div className="mt-8 flex justify-center">
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded shadow-md transition"
+            className="bg-blue-500 hover:bg-blue-600
+            text-white font-semibold px-8 py-3 rounded shadow-md transition"
           >
             Submit
           </button>
         </div>
+
+        <button
+          onClick={() => {
+            nagigate("/contact", { replace: true });
+          }}
+        >
+          go to contact page
+        </button>
       </form>
     </div>
   );

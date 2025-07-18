@@ -1,5 +1,12 @@
 import React from "react";
 import Form from "./Form";
+import UseState from "../hooks/UseState";
+import UseState3 from "../hooks/UseState3";
+import UseState4 from "../hooks/UseState4";
+import UseState5 from "../hooks/UseState5";
+import UseEffect from "../hooks/UseEffect";
+import UseEffect1 from "../hooks/UseEffect1";
+import UseEffect2 from "../hooks/UseEffect2";
 //rafce
 const Home = () => {
   let firstName = "Ram";
@@ -15,17 +22,20 @@ const Home = () => {
 
   return (
     <>
-      <Form />
+      {/* <Form /> */}
+      <div>this is my Home component </div> <br />
       <br />
-      <div>this is my Home component </div>
-      <p>this is jhon banega don </p>
+      {/* <p>this is jhon banega don </p>
       {fullName}
       <br />
-      {sum(10, 10)}
-
-      <h2 className="text-xl mt-10 text-black sm:text-3xl md:text-5xl lg:text-6xl">
-        ELIGIBILITY
-      </h2>
+      {sum(10, 10)} */}
+      {/* <UseState /> */}
+      {/* <UseState3 /> */}
+      {/* <UseState4 /> */}
+      {/* <UseState5 /> */}
+      {/* <UseEffect /> */}
+      {/* <UseEffect1 /> */}
+      <UseEffect2 />
     </>
   );
 };

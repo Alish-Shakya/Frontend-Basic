@@ -6,6 +6,7 @@ import Contact from "../components/Contact";
 import NotFound from "../components/notFound";
 import Dynamic from "../hooks/Dynamic";
 import QueryParams from "../hooks/QueryParams";
+import Error from "../components/Error";
 
 const MyRoutes = () => {
   return (
@@ -41,12 +42,14 @@ const MyRoutes = () => {
           <Route index element={<Home />}></Route>
           <Route path="contact" element={<Outlet />}>
             <Route index element={<Contact />}></Route>
-            <Route path="about" element={<Outlet />}>
-              <Route index element={<About />}></Route>
-              <Route path=":id" element={<Dynamic />}></Route>
-            </Route>
+          </Route>
+          <Route path="about" element={<Outlet />}>
+            <Route index element={<About />}></Route>
+            <Route path=":id" element={<Dynamic />}></Route>
           </Route>
           {/* <Route path=":id" element={<QueryParams />}> </Route> */}
+
+          <Route path="*" element={<Error />}></Route>
         </Route>
       </Routes>
     </>

@@ -1,8 +1,10 @@
 import React from "react";
+import Form from "./Form";
 
 const About = () => {
   return (
     <>
+      <Form />
       <div className="text-2xl">This is my About component</div>
       <p>
         my name is Alish and this is my tailwind test <br />
