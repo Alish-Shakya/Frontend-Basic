@@ -34,7 +34,7 @@ const Form = () => {
         {/* <LocalStorage /> */}
         <SessionStorage />
 
-        {/* ✅ All form fields inside one parent div */}
+        {/* All form fields inside one parent div */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col">
             <label

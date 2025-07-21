@@ -9,9 +9,20 @@ const UseEffect2 = () => {
 
   // we can have multiple useffect
   // if you miss array dependency [], useeffect will run on every render
+
+  // useEfect-1
+  //useEffect runs in every render
+  useEffect(() => {});
+
+  //useEffect-2
+  // useEffect run in first render only
+  useEffect(() => {}, []);
+
+  //UseEffect-3
+  // it will run in first render, from the second render it will only run when the count state value is changed
   useEffect(() => {
     console.log("i am use effect");
-  }, []);
+  }, [count]);
 
   useEffect(() => {
     console.log("i am useeffect without array dependency");

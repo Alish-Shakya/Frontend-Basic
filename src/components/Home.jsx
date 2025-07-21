@@ -7,6 +7,7 @@ import UseState5 from "../hooks/UseState5";
 import UseEffect from "../hooks/UseEffect";
 import UseEffect1 from "../hooks/UseEffect1";
 import UseEffect2 from "../hooks/UseEffect2";
+import Form1 from "./Form1";
 //rafce
 const Home = () => {
   let firstName = "Ram";
@@ -35,7 +36,8 @@ const Home = () => {
       {/* <UseState5 /> */}
       {/* <UseEffect /> */}
       {/* <UseEffect1 /> */}
-      <UseEffect2 />
+      {/* <UseEffect2 /> */}
+      <Form1 />
     </>
   );
 };
